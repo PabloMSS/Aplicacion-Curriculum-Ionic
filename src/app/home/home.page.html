@@ -1,20 +1,81 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div id="container1">
+      <div id="informacion">
+        <h1 class="animate__backInDown" id="info">Full Stack Developer</h1>
+      </div>
+    </div>
+
+    <div id="container2">
+        <img src="/assets/imagenes/usuario-sin-foto3.png" id="foto">
+    </div>
+
+    <div id="nombreContainer">
+      <Strong><p id="nombre">Pablo Martín</p></Strong>
+    </div>
+
+    <div id="container3">
+      <div class="primero" (click)="datos()">
+          <ion-chip class="chip">
+            <div class="centro">
+                <ion-icon name="person-outline" class="icono"></ion-icon>
+                <ion-label class="letra">Datos</ion-label>
+            </div>
+          </ion-chip>
+      </div>
+
+      <div class="primero" (click)="formacion()">
+          <ion-chip class="chip">
+            <div class="centro">
+              <ion-icon name="school-outline" class="icono"></ion-icon>
+              <ion-label class="letra">Formación</ion-label>
+            </div>
+          </ion-chip>   
+      </div>
+
+      <div class="primero" (click)="habilidades()">
+          <ion-chip class="chip">
+            <div class="centro">
+              <ion-icon name="flash-outline" class="icono"></ion-icon>
+              <ion-label class="letra">Habilidades</ion-label>
+            </div>
+          </ion-chip>     
+      </div>
+
+      <div class="primero" (click)="experiencia()">
+        <ion-chip class="chip">
+          <div class="centro">
+            <ion-icon name="bookmark-outline" class="icono"></ion-icon>
+            <ion-label class="letra">Experiencia</ion-label>
+          </div>
+        </ion-chip>
+      </div>
+
+      <div class="primero" (click)="idiomas()">
+        <ion-chip class="chip">
+          <div class="centro">
+            <ion-icon name="globe-outline" class="icono"></ion-icon>
+            <ion-label class="letra">Idiomas</ion-label>
+          </div>
+        </ion-chip>   
+      </div>
+
+      <div class="primero" (click)="conocimientos()">
+        <ion-chip class="chip">
+          <div class="centro">
+            <ion-icon name="laptop-outline" class="icono"></ion-icon>
+            <ion-label class="letra">Tecnologías</ion-label>
+          </div>
+        </ion-chip>   
+      </div>
+    </div>
+
+    <ion-footer id="footer">
+      <div id="container5">
+        <Strong><p id="final">Designed by Pablo Martín in Spain</p></Strong>
+      </div>
+      
+    </ion-footer>
+
   </div>
 </ion-content>
